@@ -1,18 +1,31 @@
 package com.saif;
 
-import org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream;
-import org.json.JSONArray;
-import org.json.JSONObject;
-
-import com.sun.org.apache.bcel.internal.generic.LSTORE;
-import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader.Array;
-
-import java.io.*;
-import java.net.Inet4Address;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
 import java.util.zip.GZIPInputStream;
+
+import com.org.json.JSONArray;
+import com.org.json.JSONException;
+import com.org.json.JSONObject;
+
+
+
+
 
 public class Main {
 
@@ -44,7 +57,7 @@ public class Main {
 				}
 			}
 
-		} catch (org.json.JSONException e) {
+		} catch (JSONException e) {
 
 		}
 
@@ -85,7 +98,7 @@ public class Main {
 					+ coords[0] + "," + coords[1] 
 					+ "\n";
 
-		} catch (org.json.JSONException e) {
+		} catch (JSONException e) {
 			csvOutput = "";
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
