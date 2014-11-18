@@ -19,10 +19,10 @@ import com.sun.org.apache.xml.internal.security.utils.HelperNodeList;
 public class Main {
 
 	public static void main(String[] args) throws FileNotFoundException, ParseException, Exception{
-		args = new String[3];
-		args[0] = "missing";
-		args[1] = "/media/louai/UQU-GISTIC-Twitter1/Crawled_Twitter_Data/GeotaggedSample/";
-		args[2] = "/media/louai/UQU-GISTIC-Twitter1/";
+//		args = new String[3];
+//		args[0] = "missing";
+//		args[1] = "/media/louai/UQU-GISTIC-Twitter1/Crawled_Twitter_Data/GeotaggedSample/";
+//		args[2] = "/media/louai/UQU-GISTIC-Twitter1/";
 		if (args.length == 3) {
 			if(args[0].equals("tweet") || args[0].equals("hashtag")){
 				Convert.main(args);
