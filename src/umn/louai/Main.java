@@ -3,8 +3,6 @@ package umn.louai;
 import java.io.FileNotFoundException;
 import java.text.ParseException;
 
-import com.sun.org.apache.xml.internal.security.utils.HelperNodeList;
-
 
 /**
  * This program have the main three functionality 
